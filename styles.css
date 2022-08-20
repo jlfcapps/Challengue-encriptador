@@ -80,7 +80,11 @@
   }
   
   .d-flex {
-    display: flex;
+    display: grid;
+      gap: 1rem;
+      grid-auto-rows: 22rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+      grid-column: span 2;
   }
   
   .d-none {
@@ -218,7 +222,6 @@
    * 3.2 Tablet
    * =============
    */
-  @media only screen and (min-width: 375px) {
     .d-sm-flex {
       display: grid;
       gap: 1rem;
@@ -259,9 +262,12 @@
    * 3.3 Desktop
    * ==============
    */
-  @media only screen and (min-width: 768px) {
     .d-md-flex {
-      display:  flex;
+      display: grid;
+      gap: 1rem;
+      grid-auto-rows: 22rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+      grid-column: span 2;
     }
   
     .d-md-block {
