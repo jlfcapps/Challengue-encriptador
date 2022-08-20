@@ -80,11 +80,7 @@
   }
   
   .d-flex {
-    display: grid;
-      gap: 1rem;
-      grid-auto-rows: 22rem;
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-      grid-column: span 2;
+    display: flex;
   }
   
   .d-none {
@@ -177,7 +173,7 @@
     width: 1rem;
     height: 1rem;
     display: inline-block;
-    background: url('./assets/Vector.png');
+    background: url('./Vector.png');
     margin: 0px 0.5rem;
   }
   
@@ -222,13 +218,9 @@
    * 3.2 Tablet
    * =============
    */
+  @media only screen and (min-width: 375px) {
     .d-sm-flex {
-      display: grid;
-      gap: 1rem;
-      grid-auto-rows: 22rem;
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-      grid-column: span 2;
-
+      display:  flex;
     }
   
     .flex-sm-column {
@@ -262,12 +254,9 @@
    * 3.3 Desktop
    * ==============
    */
+  @media only screen and (min-width: 768px) {
     .d-md-flex {
-      display: grid;
-      gap: 1rem;
-      grid-auto-rows: 22rem;
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-      grid-column: span 2;
+      display:  flex;
     }
   
     .d-md-block {
@@ -401,12 +390,12 @@
 
     @font-face {
       font-family:  'Inter';
-      src: url('./fonts/Inter-Light.ttf')
+      src: url('./Inter-Light.ttf')
     }
     
     @font-face {
       font-family:  'Inter';
-      src: url('./fonts/Inter-Bold.ttf')
+      src: url('./Inter-Bold.ttf')
     }
 
     .copy-text button:before {
@@ -435,11 +424,7 @@
 
     .copy-text.active button:before,
     .copy-text.active button:after{
-      display: grid;
-      gap: 1rem;
-      grid-auto-rows: 22rem;
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-      grid-column: span 2;
+      display: flex;
     }
 
     .fa-circle-check{
