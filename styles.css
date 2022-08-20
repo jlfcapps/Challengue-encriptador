@@ -40,8 +40,8 @@
   button[type="button"],
   button[type="button"]:hover,
   button[type="button"]:focus {
-    background: inherit;
-    border:  none;
+  background: inherit;
+  border:  none;
     color:  inherit;
     font: inherit;
     outline: none;
@@ -428,6 +428,6 @@
     }
 
     .fa-circle-check{
-      color: black;
+      color: red;
       font-size: 16px;
     }
