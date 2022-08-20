@@ -45,7 +45,6 @@ function codificador(item){
 
 function iteraCode(txt){
     txt = entrada.value.toLowerCase();
-    txt.value ="";
 
     var t = '';
     for(var i = 0; i < txt.length; i++) {
@@ -56,7 +55,6 @@ function iteraCode(txt){
 
 function iteraDeCode(txt){
     txt = entrada.value.toLowerCase();
-    txt.value ="";
 
     return txt.replace(/ai|enter|imes|ober|ufat/gi, function(matched){
         switch(matched) {
