@@ -1,0 +1,442 @@
+ html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  textarea,
+  textarea:hover,
+  textarea:focus,
+  button[type="button"],
+  button[type="button"]:hover,
+  button[type="button"]:focus {
+    background: inherit;
+    border:  none;
+    color:  inherit;
+    font: inherit;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+    width: 65vw;
+    align-items: center;
+  }
+  
+  html {
+    font-family:  'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f5fc;
+  }
+  
+  /* =================
+   * 3. Breakpoints
+   * =================
+   * Los breakpoints sirven para cambiar el diseño
+   * de la página en puntos claves
+   */
+  /* ==============
+   * 3.1 Celular
+   * ==============
+   */
+  .principal {
+    min-height: 75vh;
+  }
+  
+  .logo {
+    height: 3rem;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-grow {
+    flex-grow: 1;
+  }
+
+  .foot{
+    width: 100%;
+}
+  
+  #entrada {
+    text-align: center;
+    font-size: 2rem;
+    max-width: 100%;
+    margin: 2rem;
+    color: #0a3871;
+    border: none;
+    background-color: #f3f5fc;
+  }
+  
+  ::placeholder {
+    color: #7387a4;
+  }
+  
+  .controles {
+    padding: 1.5rem;
+  }
+  
+  header {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+  }
+  
+  .advertencia {
+    height: 2rem;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button.button {
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0px;
+    cursor: pointer;
+    
+  }
+  
+  button.button:hover,
+  button.button:focus {
+    background-color: #0A3871;
+    color: #fff;
+    border: solid 1px #000;
+  }
+  
+  .barra-lateral {
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    min-height: calc(25vh - 2rem);
+    color: #495057;
+  }
+  
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .icon-info {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background: url('./assets/Vector.png');
+    margin: 0px 0.5rem;
+  }
+  
+  .info-txt strong{
+    color: #343A40;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .barra-lateral {
+    position: relative;
+  }
+  
+  .barra-lateral .button {
+    visibility: hidden;
+    top: 1rem;
+    right: 2.5rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    width: 80px;
+    height: 50px;
+    font-size: 14px;
+    position: absolute
+  }
+  
+  .barra-lateral.con-salida .button {
+    visibility: visible;
+  }
+  
+  .barra-lateral.con-salida .info {
+    display:  none;
+  }
+  
+  #salida {
+    font-size: 1.5rem;
+    max-width: 100%;
+    word-break: break-all;
+    overflow-y: auto;
+  }
+  
+  /* =============
+   * 3.2 Tablet
+   * =============
+   */
+  @media only screen and (min-width: 375px) {
+    .d-sm-flex {
+      display: grid;
+      gap: 1rem;
+      grid-auto-rows: 22rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+      grid-column: span 2;
+
+    }
+  
+    .flex-sm-column {
+      flex-direction: column;
+    }
+  
+    .flex-sm-row {
+      flex-direction: row;
+    }
+  
+    .flex-sm-grow {
+      flex-grow: 1;
+    }
+  
+    button.button {
+      border-radius: 1rem;
+      margin: 0px 1rem;
+    }
+
+    .foot{
+        width: 100%;
+    }
+
+    .barra-lateral .button{
+      position: relative;
+      right: 1rem;
+    }
+  
+  }
+  /* ==============
+   * 3.3 Desktop
+   * ==============
+   */
+  @media only screen and (min-width: 768px) {
+    .d-md-flex {
+      display:  flex;
+    }
+  
+    .d-md-block {
+      display: block;
+    }
+  
+    .flex-md-column {
+      flex-direction: column;
+    }
+  
+    .flex-md-row {
+      flex-direction: row;
+    }
+  
+    .flex-md-grow {
+      flex-grow: 1;
+    }
+  
+    .principal {
+      width: 70%;
+    }
+  
+    .barra-lateral {
+      width: 30%;
+    }
+  
+    body {
+      height: 100vh;
+    }
+  }
+
+  footer {
+    position: absolute;
+    font-weight: 200;
+    justify-content: space-evenly;
+    padding: 0.1rem;
+    background: #E5E5E5;
+    border-top: 1px solid #0A3871;
+    top: 730px;
+    }
+
+    footer > p {
+    margin: 0.3rem;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 6px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: white;
+    }
+
+    input:checked + .slider:before {
+      background-color: #000;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(16px);
+    }
+
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .toggle{
+      position: absolute;
+      display: inline-block;
+      width: 40px;
+      height: 14px;
+      top: 80px;
+      left: 12px;
+    }
+
+    .dark-mode{
+      background: #192229;
+      color: #fff
+    }
+
+    .toggle input{
+      opacity: 1;
+      width: 0;
+      height: 0;
+    }
+
+    .slider{
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 5;
+      right: 5;
+      bottom: 0;
+      background-color: black;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .animation{
+      animation: floating 6s infinite ease-in-out;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(40px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+
+    @font-face {
+      font-family:  'Inter';
+      src: url('./fonts/Inter-Light.ttf')
+    }
+    
+    @font-face {
+      font-family:  'Inter';
+      src: url('./fonts/Inter-Bold.ttf')
+    }
+
+    .copy-text button:before {
+      content: "Copiado";
+      position: absolute;
+      top: -35px;
+      right: 20px;
+      background: #5c81dc;
+      padding: 8px 10px;
+      border-radius: 20px;
+      font-size: 15px;
+      display: none;
+    }
+
+    .copy-text button:after{
+      content: "";
+      position: absolute;
+      top: -10px;
+      right: 70px;
+      width: 10px;
+      height: 10px;
+      background: #5c81dc;
+      transform: rotate(45deg);
+      display: none;
+    }
+
+    .copy-text.active button:before,
+    .copy-text.active button:after{
+      display: grid;
+      gap: 1rem;
+      grid-auto-rows: 22rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+      grid-column: span 2;
+    }
+
+    .fa-circle-check{
+      color: black;
+      font-size: 16px;
+    }
