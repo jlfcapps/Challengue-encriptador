@@ -54,7 +54,7 @@
   }
   
   html {
-    font-family:  'ChocoBubble', sans-serif;
+    font-family:  'Inter', sans-serif;
   }
   
   body {
@@ -301,7 +301,7 @@
     footer > p {
     margin: 0.3rem;
     font-size: 12px;
-    font-family: 'ChocoBubble', sans-serif;
+    font-family: 'Inter', sans-serif;
     }
 
     .slider:before {
@@ -389,13 +389,13 @@
     }
 
     @font-face {
-      font-family:  'Lightning';
-      src: url('./Lightning-Regular.ttf')
+      font-family:  'Inter';
+      src: url('./Inter-Light.ttf')
     }
     
     @font-face {
-      font-family:  'ChocoBubble';
-      src: url('./ChocoBubble.ttf')
+      font-family:  'Inter';
+      src: url('./Inter-Bold.ttf')
     }
 
     .copy-text button:before {
