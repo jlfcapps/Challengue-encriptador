@@ -1,10 +1,10 @@
-var entrada = document.querySelector('#entrada');
-var botonEncriptar = document.querySelector('#encriptar');
-var botonDesencriptar = document.querySelector('#desencriptar');
+const entrada = document.querySelector('.entrada');
+const botonEncriptar = document.querySelector('.encriptar');
+const botonDesencriptar = document.querySelector('.desencriptar');
 var barra = document.querySelector('.barra-lateral');
 var clipboard = document.querySelector('.copiar');
 var copyText = document.querySelector('.copy-text');
-var salida
+var salida;
 var conta = 0;
 entrada.focus();
 
@@ -45,6 +45,8 @@ function codificador(item){
 
 function iteraCode(txt){
     txt = entrada.value.toLowerCase();
+    txt.value ="";
+
     var t = '';
     for(var i = 0; i < txt.length; i++) {
         t += codificador(txt[i]);
@@ -54,6 +56,8 @@ function iteraCode(txt){
 
 function iteraDeCode(txt){
     txt = entrada.value.toLowerCase();
+    txt.value ="";
+
     return txt.replace(/ai|enter|imes|ober|ufat/gi, function(matched){
         switch(matched) {
             case 'ai': return 'a'
@@ -68,7 +72,8 @@ function iteraDeCode(txt){
 }
 
 botonEncriptar.addEventListener('click', function() {
-    var txt = entrada.value;
+    const txt = entrada.value;
+    txt.value ="";
     if(txt.length === 0) {
         salida.nodeValue = ''
         ocultarRes();
@@ -99,7 +104,7 @@ botonDesencriptar.addEventListener('click', function() {
 }); 
 
 entrada.addEventListener('input', function() {
-    var valor = entrada.value;
+    const valor = entrada.value;
     if(valor.length === 0) {
         salida.nodeValue= ''
         ocultarRes();
