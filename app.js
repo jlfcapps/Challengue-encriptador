@@ -73,7 +73,6 @@ function iteraDeCode(txt){
 
 botonEncriptar.addEventListener('click', function() {
     const txt = entrada.value;
-    entrada.value=""
     if(txt.length === 0) {
         salida.nodeValue = ''
         ocultarRes();
