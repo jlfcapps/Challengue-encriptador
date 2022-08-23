@@ -10,15 +10,15 @@ entrada.focus();
 
 function toggleDarkLight() {
     var element = document.body;
-    var element1 = document.querySelector('#foot');
-    element.classList.toggle("#dark-mode");
+    var element1 = document.querySelector('.foot');
+    element.classList.toggle("dark-mode");
     conta++;
     if(conta === 2){
         conta = 0;
     } else{
         conta = 1;
     }
-    conta === 1 ? element1.classList.add("#dark-mode") : element1.classList.remove("dark-mode");   
+    conta === 1 ? element1.classList.add("dark-mode") : element1.classList.remove("dark-mode");   
 }
 
 function laSalida() {
@@ -45,6 +45,7 @@ function codificador(item){
 
 function iteraCode(txt){
     txt = entrada.value.toLowerCase();
+
     var t = '';
     for(var i = 0; i < txt.length; i++) {
         t += codificador(txt[i]);
