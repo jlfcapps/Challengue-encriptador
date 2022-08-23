@@ -58,7 +58,7 @@
   }
   
   body {
-    background-color: #f3f5fc;
+    background-color: #fff;
   }
   
   /* =================
@@ -427,7 +427,3 @@
       display: flex;
     }
 
-    .fa-circle-check{
-      color: black;
-      font-size: 16px;
-    }
