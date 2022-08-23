@@ -110,7 +110,7 @@
     margin: 2rem;
     color: #0a3871;
     border: none;
-    background-color: #f3f5fc;
+    background-color: #fff;
   }
   
   ::placeholder {
@@ -145,13 +145,13 @@
   
   button.button:hover,
   button.button:focus {
-    background-color: #0A3871;
+    background-color: #fff;
     color: rgba(0, 0, 0, 0);
     border: solid 1px #000;
   }
   
   .barra-lateral {
-    background-color: #ccc;
+    background-color: #fff;
     border: solid 1px #ddd;
     border-radius: 1rem;
     margin: 1rem;
@@ -311,7 +311,7 @@
       width: 6px;
       left: 4px;
       bottom: 4px;
-      background-color: white;
+      background-color: fff;
       -webkit-transition: .4s;
       transition: .4s;
     }
