@@ -56,7 +56,6 @@ function iteraCode(txt){
 
 function iteraDeCode(txt){
     txt = entrada.value.toLowerCase();
-    entrada.value=""
 
     return txt.replace(/ai|enter|imes|ober|ufat/gi, function(matched){
         switch(matched) {
